@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Egately\EgateAuthClient\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class EgateAuthClientCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'egauthclient';
 
     public $description = 'My command';
 

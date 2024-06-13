@@ -1,0 +1,16 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::table('users', function (Blueprint $table) {
+            $table->string(config('egauthclient.users_table_access_token_attribute'))->nullable()->after('password');
+            $table->string('password')->nullable()->change();
+        });
+    }
+};
